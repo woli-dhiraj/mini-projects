@@ -12,14 +12,12 @@ const Header = () => {
           React Mini Projects
         </div>
 
-        
         <nav className="hidden md:flex space-x-6 text-gray-600 font-medium">
-        <NavLink to='/' className="hover:text-blue-600">Home</NavLink>
-        <NavLink to='about' className="hover:text-blue-600">About</NavLink>
-        <NavLink to='Contact' className="hover:text-blue-600">Contact</NavLink>
+          <NavLink to='/' className="hover:text-blue-600">Home</NavLink>
+          <NavLink to='/about' className="hover:text-blue-600">About</NavLink>
+          <NavLink to='/contact' className="hover:text-blue-600">Contact</NavLink>
         </nav>
 
-    
         <button
           className="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -43,9 +41,9 @@ const Header = () => {
       {/* Mobile Nav */}
       {menuOpen && (
         <div className="md:hidden bg-white px-6 pb-4 space-y-2 text-gray-700">
-          <a href="#" className="block hover:text-blue-600">Home</a>
-          <a href="#" className="block hover:text-blue-600">About</a>
-          <a href="#" className="block hover:text-blue-600">Contact</a>
+          <NavLink to='/' onClick={() => setMenuOpen(false)} className="block hover:text-blue-600">Home</NavLink>
+          <NavLink to='/about' onClick={() => setMenuOpen(false)} className="block hover:text-blue-600">About</NavLink>
+          <NavLink to='/contact' onClick={() => setMenuOpen(false)} className="block hover:text-blue-600">Contact</NavLink>
         </div>
       )}
     </header>
