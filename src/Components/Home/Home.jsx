@@ -58,6 +58,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-blue-200 p-8">
       <h1 className="text-5xl font-extrabold text-center mb-12 text-gray-800">
+     
         🚀 React Mini Projects
       </h1>
 

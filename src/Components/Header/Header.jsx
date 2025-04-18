@@ -9,7 +9,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         <div className="text-2xl font-bold text-blue-600 tracking-tight">
-          React Mini Projects
+          
+             <NavLink to='/' className="cursor-pointer">React Mini Projects</NavLink>
         </div>
 
         <nav className="hidden md:flex space-x-6 text-gray-600 font-medium">
